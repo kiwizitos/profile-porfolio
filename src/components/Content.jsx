@@ -1,31 +1,37 @@
 import Cardzinho from './CardContent'
 
+import { ExiCo, Codebox, Feedback, Todo } from '../assets/img'
+
 function Content() {
   return (
     <div className='grid grid-cols-1 lg:grid-cols-3 gap-4 justify-items-center'>
       <Cardzinho
         name='Feedback App'
-        desc='an application made with react & firebase, wich gives the user a form to input some rating and a description.'
+        desc='an application made with react & firebase, input the rating and a description.'
+        imgSrc={Feedback}
         siteLink='https://kiwi-feedback.netlify.app'
         gitLink='https://github.com/kiwizitos/feedback-app'
       />
       <Cardzinho
-        name='Feedback App'
-        desc='an application made with react & firebase, wich gives the user a form to input some rating and a description.'
-        siteLink='https://kiwi-feedback.netlify.app'
-        gitLink='https://github.com/kiwizitos/feedback-app'
+        name='To-do App'
+        desc='Created a to-do list to try some state functions for React.'
+        imgSrc={Todo}
+        siteLink='https://aww-todo.netlify.app/'
+        gitLink='https://github.com/kiwizitos/todo-react'
       />
       <Cardzinho
-        name='Feedback App'
-        desc='an application made with react & firebase, wich gives the user a form to input some rating and a description.'
-        siteLink='https://kiwi-feedback.netlify.app'
-        gitLink='https://github.com/kiwizitos/feedback-app'
+        name='Codebox'
+        desc='Simple front-end project to use forms.'
+        imgSrc={Codebox}
+        siteLink='https://codbox.netlify.app/index.html'
+        gitLink='https://github.com/kiwizitos/caixita'
       />
       <Cardzinho
-        name='Feedback App'
-        desc='an application made with react & firebase, wich gives the user a form to input some rating and a description.'
-        siteLink='https://kiwi-feedback.netlify.app'
-        gitLink='https://github.com/kiwizitos/feedback-app'
+        name='Exi Co'
+        desc='Graphic design project.'
+        imgSrc={ExiCo}
+        siteLink='https://exico.netlify.app/'
+        gitLink='https://github.com/kiwizitos/exiCo'
       />
     </div>
   )

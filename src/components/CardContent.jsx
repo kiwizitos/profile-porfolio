@@ -9,12 +9,10 @@ import {
 import { SocialIcon } from 'react-social-icons'
 import WebIcon from '@mui/icons-material/Web'
 
-import Image from '../assets/site.png'
-
-function Cardzinho({ name, desc, siteLink, gitLink }) {
+function Cardzinho({ name, desc, siteLink, gitLink, imgSrc }) {
   return (
     <Card sx={{ minWidth: 200, maxWidth: 280, maxHeight: 400 }}>
-      <CardMedia component='img' alt='site image' height='30' image={Image} />
+      <CardMedia component='img' alt='site image' height='30' image={imgSrc} />
       <CardContent>
         <Typography>{name}</Typography>
         <Typography sx={{ fontSize: 12 }}>{desc}</Typography>
